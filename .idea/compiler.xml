@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dppxapi" />
+        <module name="gm-eureka" />
+        <module name="dpzullgatewall9527" />
+        <module name="projectcloud" />
+        <module name="dp-zull-gatewall-9527" />
+        <module name="usercloud" />
+        <module name="gmcustomer80" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dmconsumer80" target="1.8" />
+      <module name="dpzullgatewall9527" target="1.8" />
+      <module name="gm-costomer-80" target="1.8" />
+      <module name="gmeureka" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gm-costomer-80" options="" />
+    </option>
+  </component>
+</project>
