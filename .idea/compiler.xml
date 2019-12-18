@@ -11,6 +11,7 @@
         <module name="dpzullgatewall9527" />
         <module name="projectcloud" />
         <module name="dp-zull-gatewall-9527" />
+        <module name="dpHystrixDashboard9001" />
         <module name="usercloud" />
         <module name="gmcustomer80" />
       </profile>

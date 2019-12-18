@@ -3,6 +3,15 @@ server:
 
 
 spring:
+  mail:
+    username: 1781860704@qq.com
+    password: dtnqnwnzcpdvdjbc
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          sll:
+            enable: true
   application:
     name: user-cloud
   datasource:
@@ -17,7 +26,7 @@ spring:
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200
   redis:
-    host: 192.168.121.131
+    host: localhost
     port: 6379
     password:
     lettuce:

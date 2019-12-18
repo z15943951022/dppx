@@ -1,6 +1,7 @@
 package com.dapeng_szz.cn.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dapeng_szz.cn.dao.OrderMapper;
 import com.dapeng_szz.cn.pojo.Order;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 @Slf4j
@@ -60,5 +62,10 @@ public class OrderController {
         log.info(orderIPage.getTotal()+"");
         return ResponseEntity.ok().body(orderIPage.getRecords());
 
+    }
+
+    @GetMapping("/orderList/{userId}")
+    public List<Order> selectOrderByUserId(@PathVariable("userId") Long userId){
+        return orderMapper.selectList(Wrappers.<Order>lambdaQuery().eq(Order::getUserId,userId));
     }
 }

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dm-consumer-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp-HystrixDashboard-9001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp-zull-gateway-9527" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dppx-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gm-costomer-80" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gm-customer-80" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gm-eureka-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project-cloud" charset="UTF-8" />

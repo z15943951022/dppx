@@ -4,7 +4,7 @@ spring:
   application:
     name: gm-zuul-gateway
   redis:
-    host: 192.168.121.131
+    host: localhost
     port: 6379
     password:
     lettuce:
@@ -34,9 +34,7 @@ info:
 
 zuul:
   prefix: /dapeng  #服务前缀
-  #ignored-services: "*"  #原真实服务名忽略
+  ignored-services: "*"  #原真实服务名忽略
   routes:
-    user-cloud.serviceId: user-cloud
+    user-cloud.serviceId: gmweb-feign
     user-cloud.path: /user/**
-    order-cloud.serviceID: order-cloud
-    order-cloud.path: /order/**

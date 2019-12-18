@@ -12,11 +12,11 @@ public enum  UserEnum {
         this.text=text;
     }
 
-    public String getValue() {
+    private String getValue() {
         return value;
     }
 
-    public String getText() {
+    private String getText() {
         return text;
     }
 

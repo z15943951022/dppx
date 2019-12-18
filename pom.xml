@@ -15,6 +15,7 @@
         <module>gm-eureka-7001</module>
         <module>dp-zull-gateway-9527</module>
         <module>gm-customer-80</module>
+        <module>dp-HystrixDashboard-9001</module>
     </modules>
 
     <properties>
