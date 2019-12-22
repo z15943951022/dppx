@@ -37,4 +37,4 @@ zuul:
   ignored-services: "*"  #原真实服务名忽略
   routes:
     user-cloud.serviceId: gmweb-feign
-    user-cloud.path: /user/**
+    user-cloud.path: /gm/**

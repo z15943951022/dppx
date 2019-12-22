@@ -1,18 +1,24 @@
 package com.dapeng_szz.cn.commons.util;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Component;
+
+@Component
 public class EmailUtil {
 
-   /* @Autowired
-    private  static JavaMailSender javaMailSender;
 
-    public static void contextLoads(String email,String message) {
+   /* @Autowired
+    private JavaMailSender javaMailSender;
+
+    public void contextLoads(String email,String msg,String title) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setSubject("验证码");
-        simpleMailMessage.setText(message);
-        simpleMailMessage.setFrom("1781860704@qq.com");
+        simpleMailMessage.setSubject(title);
+        simpleMailMessage.setText(msg);
+        simpleMailMessage.setFrom("1724368396@qq.com");
         simpleMailMessage.setTo(email);
         javaMailSender.send(simpleMailMessage);
-
     }*/
 }

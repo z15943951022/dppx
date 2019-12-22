@@ -13,6 +13,8 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +28,7 @@ public class UserController {
 
     @Autowired
     private UserMapper userMapper;
+
 
 
 
@@ -64,12 +67,6 @@ public class UserController {
     }
 
 
-   /* @PostMapping("/auth")
-    public Boolean sendAuthByEmail(String email){
-        String authCode = AuthUtil.getAuthCode();
-        EmailUtil.contextLoads(email,authCode);
-        return true;
-    }*/
 
 
 }
